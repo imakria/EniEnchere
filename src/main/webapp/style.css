@@ -1,0 +1,908 @@
+@charset "UTF-8";
+
+/*** Début du style GLOBAL ***/
+body * {
+    font-family: 'Chilanka';
+}
+
+button * {
+    font-weight: bold;
+    box-shadow: 5px 10px;
+}
+
+.logo_top {
+    color: #777;
+}
+/** Fin du style GLOBAL ***/
+
+/* NavBar*/
+#accueilOffline .divNavbar {
+    float: right;
+}
+
+#accueilOffline .divNavbar {
+    float: right;
+}
+
+/* Toutes les divs sauf le titre*/
+#accueilOffline .divPrincipaleAvecFiltre {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Colonne 1 ---> Section de recherche et filtre*/
+#accueilOffline .colonne1 {
+    flex-grow: 2;
+    width: 200px;
+    padding-right: 0;
+    margin-left: 200px;
+}
+
+#accueilOffline .titrePage {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#accueilOffline .searchPlaceHolder {
+    width: 100%;
+}
+
+#accueilOffline .categorieContainer {
+    display: flex;
+}
+
+#accueilOffline .titreCategorie {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+#accueilOffline .btn .caret {
+    margin-left: 100px;
+}
+
+#accueilOffline .divPrincipaleAvecFiltre h4 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#accueilOffline .divCheckboxAchat {
+    margin-left: 20px;
+}
+
+#accueilOffline .divCheckMesVentes {
+    margin-left: 20px;
+}
+
+#accueilOffline .divRadioEtCheckbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#accueilOffline .divDropDown {
+    margin-left: 30px;
+}
+
+/*Colonne 2 ----> Bouton rechercher*/
+#accueilOffline .colonne2 {
+    padding-left: 0;
+    flex-grow: 1;
+    width: 400px;
+}
+
+#accueilOffline .btnRechercher {
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+}
+
+/*Le cadre exterieur: loupe et input search*/
+#accueilOffline .input-group {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    border: solid 1px grey;
+    border-radius: 300px;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    width: 400px;
+}
+
+#accueilOffline .input-group-prepend {
+    margin-left: 20px;
+}
+
+/*Cadre interieur de la loupe*/
+#accueilOffline .input-group-text {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*Cadre de l'input search seul*/
+#accueilOffline .form-control {
+    background-color: transparent;
+    border-color: transparent;
+    -webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0) !important;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+#accueilOffline .fas {
+    font-size: 15px;
+    padding-left: 13px;
+    padding-top: 9px;
+    color: grey;
+}
+
+/* Vignette des produits*/
+#accueilOffline .alignerCarteProduit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+#accueilOffline .card-product {
+    height: 150px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin: 20px 0 10px 250px;
+}
+
+#accueilOffline .card-product-bis {
+    height: 150px;
+    width: 400px;
+}
+
+#accueilOffline .card-product img {
+    height: 100%;
+    width: 130px;
+    object-fit: cover;
+}
+
+#accueilOffline .card-product h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#accueilOffline .card-product p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+#accueilOffline .card-product .card-product-infos {
+    padding: 16px;
+}
+
+#accueilOffline .card-product h2 {
+    text-decoration-line: underline;
+}
+
+#accueilOffline .filterDiv {
+    display: none; /* caché par défaut */
+}
+/*** Fin page d'ACCUEIL ***/
+
+/*** Début page CONNEXION & page MON PROFIL ***/
+#connexion_et_monprofil .logoProfil {
+    margin-bottom: 80px;
+}
+
+#connexion_et_monprofil .container-fluid {
+    margin-top: 150px;
+    width: 450px;
+}
+
+#connexion_et_monprofil .containerProfil {
+    width: 600px;
+}
+
+#connexion_et_monprofil .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#connexion_et_monprofil .connexionDiv {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#connexion_et_monprofil .enLigne {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#connexion_et_monprofil .enLigne label {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-items: center;
+}
+
+#connexion_et_monprofil .checkBoxDiv {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+#connexion_et_monprofil .checkBoxDiv input {
+    margin: 10px 10px 10px 0px
+}
+
+#connexion_et_monprofil .checkBoxDiv label {
+    margin: 0px 20px 0px 3px
+}
+
+#connexion_et_monprofil .inline {
+    display: inline-flex;
+}
+
+#connexion_et_monprofil .btnCreerCompte {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#connexion_et_monprofil .btnConnexion {
+    width: 50%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#connexion_et_monprofil #identifiant {
+    width: 250px;
+}
+
+#connexion_et_monprofil #motDePasse {
+    width: 250px;
+}
+
+#connexion_et_monprofil .btn {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+}
+
+#connexion_et_monprofil .logo {
+    margin-bottom: 100px;
+}
+
+#connexion_et_monprofil .inputEnlectureSeul {
+    width: 60%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgb(238, 238, 238);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+#connexion_et_monprofil .btnModiferProfil {
+    margin: 50px auto;
+    width: 30%;
+}
+
+#connexion_et_monprofil .divBtnModifier {
+    display: flex;
+    justify-content: center;
+}
+/*** Fin page CONNEXION & page MON PROFIL ***/
+
+/*** Début page d'ACQUISITION ***/
+#page_acquisition * {
+    font-family: 'Chilanka';
+}
+
+#page_acquisition h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -200px;
+    font-size: 25px;
+}
+
+#page_acquisition img {
+    height: 300px;
+    width: 300px;
+}
+
+#page_acquisition .infos_vente {
+    margin-top: 20px;
+}
+
+#page_acquisition h4 {
+    font-size: 25px;
+}
+
+#page_acquisition .texte_vente {
+    font-size: 25px;
+}
+
+#page_acquisition label {
+    font-weight: normal;
+    width: 600px;
+    margin-right: 50px;
+}
+
+#page_acquisition button {
+    /*Le style du bouton est overwrite quelque part*/
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    margin-left: 400px;
+    box-shadow: 5px 10px;
+}
+
+#page_acquisition .zone_description {
+    display: flex;
+    justify-content: space-around;
+}
+/*** Fin page d'ACQUISITION ***/
+
+/*** Début formulaire inscription ***/
+#inscription .container .heading h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#inscription-form {
+    font-size: 20px;
+    margin-left: -25px;
+}
+
+#inscription-form .col-md-6 {
+    height: 60px;
+}
+
+#inscription .inscription-control {
+    height: 34px;
+    font-size: 18px;
+    width: 250px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#inscription label {
+    width: 155px;
+}
+
+#inscriptionRow .passwordPart {
+    margin-top: 10px;
+}
+
+#inscription .buttonInscription {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#inscription .btnCreer {
+    text-align: end;
+    padding-right: 30px;
+}
+
+#inscription .btnAnnuler {
+    padding-left: 80px;
+}
+
+#inscription .infoUtile {
+    margin: 5px;
+    font-size: 18px;
+}
+
+#inscription .comments {
+    font-style: italic;
+    font-size: 15px;
+    height: 25px;
+    color: #ff0000;
+}
+
+#inscription .glyphicon-ok {
+    margin-right: 15px;
+}
+
+#inscription .btn-success {
+    margin-bottom: 15px;
+}
+
+#inscription .sucessCreation {
+    border: 5px inset #16910A;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.52);
+    margin-bottom: 15px;
+}
+/**********media queries ****************/
+@media ( max-width : 1200px) {
+    #inscription-form {
+        margin: auto;
+    }
+}
+
+@media ( max-width : 990px) {
+    #inscription-form {
+        margin: auto;
+        text-align: center;
+    }
+    #inscription .divBtn {
+        display: flex;
+        justify-content: space-around;
+    }
+    #inscription .buttonInscription {
+        width: 150px;
+    }
+    #inscription .btnCreer {
+        text-align: center;
+        padding: 0px;
+    }
+    #inscription .btnAnnuler {
+        padding: 0px;
+    }
+}
+
+@media ( max-width : 436px) {
+    #inscription label {
+        display: block;
+        margin: 10px auto 5px;
+    }
+}
+/*** Fin formulaire inscription ***/
+
+/*** Début formulaire modification profil ***/
+#modificationProfil .creditPart h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+#modificationProfil .row {
+    margin-left: -65px;
+}
+
+#modification-form {
+    font-size: 20px;
+}
+
+#modificationProfil .col-md-6 {
+    height: 60px;
+    width: 550px;
+}
+
+#modificationProfil .col-md-12 {
+    height: 60px;
+}
+
+#modificationProfil .container .heading h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-left: -85px;
+}
+
+#modificationProfil label {
+    width: 240px;
+}
+
+#modificationProfil input {
+    height: 35px;
+    border: 1px solid #ccc;
+}
+
+#modificationProfil .container {
+    width: 1500px;
+}
+
+#modificationProfil .btnEnregistrer {
+    width: 110px;
+}
+
+/*** Media Queries ***/
+@media ( max-width : 1200px) {
+    #modificationProfil {
+        margin: auto;
+        text-align: inherit;
+    }
+    #modification-form {
+        margin-left: 200px;
+    }
+    #modificationProfil .divBtn {
+        display: flex;
+        justify-content: space-around;
+    }
+    #modificationProfil .buttonInscription {
+        width: 200px;
+    }
+    #modificationProfil .btnEnregistrer {
+        width: 110px;
+    }
+    #modificationProfil .btnCreer {
+        text-align: center;
+        padding: 0px;
+    }
+    #modificationProfil .btnAnnuler {
+        padding: 0px;
+    }
+    #modificationProfil .container {
+        width: 900px;
+    }
+}
+
+@media ( max-width : 436px) {
+    #modificationProfil label {
+        display: block;
+        margin: 10px auto 5px;
+    }
+}
+/*** Fin formulaire modification profil ***/
+
+/*** Début page liste encheres connecte ***/
+/* NavBar*/
+#enchereConnecte .divNavbar {
+    float: right;
+}
+
+#enchereConnecte .divNavbar {
+    float: right;
+}
+
+/* Toutes les divs sauf le titre*/
+#enchereConnecte .divPrincipaleAvecFiltre {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#enchereConnecte .littleScare{
+    box-shadow: 0px 0px;
+}
+
+/* Colonne 1 ---> Section de recherche et filtre*/
+#enchereConnecte .colonne1 {
+    flex-grow: 2;
+    width: 200px;
+    padding-right: 0;
+    margin-left: 200px;
+}
+
+#enchereConnecte .titrePage {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#enchereConnecte .searchPlaceHolder {
+    width: 100%;
+}
+
+#enchereConnecte .categorieContainer {
+    display: flex;
+}
+
+#enchereConnecte .titreCategorie {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+#enchereConnecte .btn .caret {
+    margin-left: 100px;
+}
+
+#enchereConnecte .divPrincipaleAvecFiltre h4 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#enchereConnecte .divCheckboxAchat {
+    margin-left: 20px;
+}
+
+#enchereConnecte .divCheckMesVentes {
+    margin-left: 20px;
+}
+
+#enchereConnecte .divRadioEtCheckbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#enchereConnecte .divDropDown {
+    margin-left: 30px;
+}
+
+/*Colonne 2 ----> Bouton rechercher*/
+#enchereConnecte .colonne2 {
+    padding-left: 0;
+    flex-grow: 1;
+    width: 400px;
+}
+
+#enchereConnecte .btnRechercher {
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+}
+
+/*Le cadre exterieur: loupe et input search*/
+#enchereConnecte .input-group {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    border: solid 1px grey;
+    border-radius: 300px;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    width: 400px;
+}
+
+#enchereConnecte .input-group-prepend {
+    margin-left: 20px;
+
+}
+
+/*Cadre interieur de la loupe*/
+#enchereConnecte .input-group-text {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*Cadre de l'input search seul*/
+#enchereConnecte .form-control {
+    background-color: transparent;
+    border-color: transparent;
+
+    -webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0) !important;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+#enchereConnecte .fas {
+    font-size: 15px;
+    padding-left: 13px;
+    padding-top: 9px;
+    color: grey;
+}
+
+/* Vignette des produits*/
+
+#enchereConnecte .alignerCarteProduit {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+
+
+#enchereConnecte .card-product {
+
+    height: 150px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin: 20px 0 10px 250px;
+}
+
+#enchereConnecte .card-product-bis {
+    height: 150px;
+    width: 400px;
+}
+#enchereConnecte .card-product img {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+}
+
+#enchereConnecte .card-product h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#enchereConnecte .card-product p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+
+}
+
+#enchereConnecte .card-product .card-product-infos {
+    padding: 16px;
+}
+
+#enchereConnecte .card-product h2 {
+    text-decoration-line: underline;
+}
+
+#enchereConnecte .filterDiv {
+    display: none; /* caché par défaut */
+}
+
+/* "show" qui se rajoute aux elements pour afficher grace à javascript */
+.show {
+    display: flex !important;
+}
+
+.card-product-infos .show {
+    z-index: 10;
+}
+
+/*** Début page ENCHERIR ***/
+
+#page_encherir .titre {
+    color: red;
+    text-align: center;
+}
+
+
+/*** Début page mot de passe ***/
+
+#password .container {
+    margin-top: 200px;
+
+}
+
+/*** Début page Ajouter Article ***/
+#ajout-produit h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+fieldset {
+    padding: 1px;
+    margin: 1px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+
+#ajout-produit legend {
+    width: 13%;
+}
+
+
+#ajout-produit .col-md-6 {
+    height: 60px;
+}
+
+#ajout-produit .img-responsive {
+    padding-left: 450px;
+}
+
+@media ( max-width : 2000px) {
+    #ajout-produit .img-responsive {
+        padding-left: 250px;
+    }
+
+}
+
+@media ( max-width : 1550px) {
+    #ajout-produit .img-responsive {
+        padding-left: 100px;
+    }
+
+}
+
+@media ( max-width : 436px) {
+    #ajout-produit .img-responsive {
+        padding-left: 0px;
+    }
+
+}
+
+#ajout-produit .buttonInscription {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#ajout-produit .divBtn {
+    margin: 25px;
+    display: flex;
+}
+
+#ajout-produit .buttonEnregistrer {
+    width:100%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#ajout-produit .buttonAnnuler {
+    width:100%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#ajout-produit .buttonAnnuler {
+    width:100%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+
+/*** Footer ***/
+
+
+.footer {
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+    color: rgba(0,0,0,0.3);
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+.footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+.footer-links a:hover {
+    opacity: 1;
+}
+.footer .fa-heart {
+    color: #D23333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
