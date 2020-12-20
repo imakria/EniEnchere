@@ -30,7 +30,7 @@ public class CategoriesDAOJdbcImpl implements CategoriesDAO {
     public List<Categories> selectAll() {
 
         loadDatabase();
-        List<Categories> listeCategorie = new ArrayList<Categories>();
+        List<Categories> listeCategorie = new ArrayList<>();
 
         try {
             PreparedStatement pstmt = connection.prepareStatement(SELECT_ALL);

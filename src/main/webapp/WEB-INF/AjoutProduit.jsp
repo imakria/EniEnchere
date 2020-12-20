@@ -1,3 +1,4 @@
+<%--@elvariable id="utilisateur" type="fr.eniEnchere.bo.Utilisateurs"--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -31,7 +32,7 @@
                     
                     reader.addEventListener( "load", function( event ) {
                         let span = document.createElement('span');
-                        span.innerHTML = '<img widht="300" src="' + event.target.result + '" class="figure-img img-fluid rounded" alt="TestImage" />';
+                        span.innerHTML = '<img width="300" src="' + event.target.result + '" class="figure-img img-fluid rounded" alt="TestImage" />';
                         imageList.appendChild( span );
                         
                     });

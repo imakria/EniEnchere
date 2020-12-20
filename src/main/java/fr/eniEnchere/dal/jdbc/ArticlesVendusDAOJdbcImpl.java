@@ -6,12 +6,10 @@ import fr.eniEnchere.dal.ConnectionProvider;
 
 
 import java.sql.*;
-import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
-
 import static java.sql.Date.valueOf;
-import static java.util.Date.*;
+
 
 public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
 
@@ -42,7 +40,7 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
     @Override
     public List<ArticleVendus> selectAll() {
         loadDatabase();
-        List<ArticleVendus> listeArticles = new ArrayList<ArticleVendus>();
+        List<ArticleVendus> listeArticles = new ArrayList<>();
 
         try {
             PreparedStatement pstmt = connection.prepareStatement(SELECT_ALL);
@@ -155,7 +153,7 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
     //Méthode non fini
     public List<ArticleVendus> selectByFilter(String motDansRecherche) {
         loadDatabase();
-        List<ArticleVendus> listeArticles = new ArrayList<ArticleVendus>();
+        List<ArticleVendus> listeArticles = new ArrayList<>();
 
         try {
             PreparedStatement pstmt = connection.prepareStatement(SELECT_BY_FILTRE);
@@ -205,7 +203,7 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
     @Override
     public List<ArticleVendus> selectByFilterLike() {
         loadDatabase();
-        List<ArticleVendus> listeArticles = new ArrayList<ArticleVendus>();
+        List<ArticleVendus> listeArticles = new ArrayList<>();
 
         try {
             PreparedStatement pstmt = connection.prepareStatement(SELECT_ALL);
@@ -220,6 +218,11 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
         }
         System.out.println(listeArticles);
         return listeArticles;
+
+    }
+
+    @Override
+    public void create(ArticleVendus a)  {
 
     }
 
@@ -245,14 +248,9 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
 
     }
 
-    @Override
-    public void create(ArticleVendus a) throws Exception {
-        // TODO Auto-generated method stub
-
-    }
 
     @Override
-    public ArticleVendus read(int id) throws Exception {
+    public ArticleVendus read(int id) {
         loadDatabase();
         ArticleVendus a = null;
 
@@ -289,8 +287,8 @@ public class ArticlesVendusDAOJdbcImpl implements ArticlesVendusDAO {
     }
 
     @Override
-    public void delete(int id) throws Exception {
-        // TODO Auto-generated method stub
+    public void delete(int id)  {
 
     }
+
 }

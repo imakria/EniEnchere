@@ -100,7 +100,7 @@
                         <div class="btn-group divDropDown">
                             <button type="button" class="btn btn-default dropdown-toggle"
                                     data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                    aria-expanded="false" id="categories">
                                 Choisissez la catégorie <span class="caret littleScare"></span>
                             </button>
                             <ul class="dropdown-menu divDropDown">
