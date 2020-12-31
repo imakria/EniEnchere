@@ -26,13 +26,13 @@
 
 
 <body>
+<%@ include file="header.jsp" %>
 	<section id="connexion_et_monprofil">
 		<div class="container-fluid">
 			<div class="containerProfil">
-				<div class="logo">
-					<%@ include file="logoTop.jsp"%>
+				<div class="heading">
+					<h2>Profil du vendeur</h2>
 				</div>
-
 				<div class="enLigne col ">
 					<label class="labelProfil" for="nom">Pseudo : </label> <input
 						class="form-control inputEnlectureSeul" type="text"
@@ -98,6 +98,7 @@
 			
 		</script>
 	</section>
+<%@ include file="footer.jsp" %>
 </body>
 
 </html>

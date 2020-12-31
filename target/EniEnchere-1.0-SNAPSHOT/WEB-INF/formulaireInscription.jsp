@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<%@ include file="header.jsp" %>
 	<nav class="navbar navbar-default">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="${pageContext.request.contextPath}/">ENI-Encheres</a>
@@ -141,5 +141,6 @@
            </div>
         </div>
       </section>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

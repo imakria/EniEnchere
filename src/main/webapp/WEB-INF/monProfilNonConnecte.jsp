@@ -23,10 +23,13 @@
 
 
 <body>
-  <%@ include file="logoTop.jsp"%>
+<%@ include file="header.jsp" %>
   <section id="connexion_et_monprofil">
 	<div class="container-fluid">
 		<div class="containerProfil">
+			<div class="heading">
+				<h2>Profil du Vendeur</h2>
+			</div>
 
 			<div class="enLigne col ">
 				<label class="labelProfil" for="nom">Pseudo : </label> <input class="form-control inputEnlectureSeul" type="text" placeholder="${utilisateur.pseudo}" readonly name="nom" id="nom">
@@ -64,6 +67,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">		
 	</script>
   </section>
+<%@ include file="footer.jsp" %>
 </body>
 
 </html>

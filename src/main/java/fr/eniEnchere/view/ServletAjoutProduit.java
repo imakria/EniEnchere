@@ -14,11 +14,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.Part;
+import javax.servlet.http.*;
 
 
 /**
@@ -153,7 +149,7 @@ public class ServletAjoutProduit extends HttpServlet {
 		try {
 			articleAjouterAvecNoArticle = ajouterArticles.find(idProduit);
 			
-			Part part = request.getPart("multiPartServlet"); 
+			Part part = request.getPart("multiPartServlet");
 			System.out.println("Dans le File part : " + part);
 				String fileName = getFileName(part);
 				System.out.println("File name est : " + fileName);

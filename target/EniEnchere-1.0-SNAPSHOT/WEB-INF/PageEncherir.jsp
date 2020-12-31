@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<%@ include file="logoTop.jsp"%>
+<%@ include file="header.jsp" %>
 
 	<section id="page_encherir">
 		<div class="">
@@ -40,54 +40,54 @@
 				<div class="row">
 					<div class="col-lg-8 col-sm-12 col-xs-12">
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 nomArticle">
 							<h3>${ArticleAEncherir.nomArticle }</h3>
 						</div>
 
-						<div class="col-lg-12 ">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5 ">Description :</h3>
 							<p class="col-lg-7 ">${ArticleAEncherir.description }</p>
 						</div>
 
-						<div class="col-lg-12">
-							<h3 class="col-lg-5">Catégorie</h3>
-							<h3 class="col-lg-7">${ArticleAEncherir.libelleCategorie }</h3>
+						<div class="col-lg-12 divLabel">
+							<h3 class="col-lg-5">Catégorie :</h3>
+							<p class="col-lg-7">${ArticleAEncherir.libelleCategorie }</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5">Meilleur offre :</h3>
-							<h3 class="col-lg-7">${ArticleAEncherir.prixVente }</h3>
+							<p class="col-lg-7">${ArticleAEncherir.prixVente }</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5">Mise à prix :</h3>
-							<h3 class="col-lg-7">${ArticleAEncherir.prixInitial }points</h3>
+							<p class="col-lg-7">${ArticleAEncherir.prixInitial }points</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5">Fin de l'enchère :</h3>
-							<h3 class="col-lg-7">${ArticleAEncherir.dateFinEncheres }</h3>
+							<p class="col-lg-7">${ArticleAEncherir.dateFinEncheres }</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5">Retrait :</h3>
 							<p class="col-lg-7">${ArticleAEncherir.rue}<br>${ArticleAEncherir.code_postal}
 								${ArticleAEncherir.ville}
 							</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabel">
 							<h3 class="col-lg-5">Vendeur :</h3>
-							<h3 class="col-lg-7">pseudo vendeur</h3>
+							<p class="col-lg-7">pseudo vendeur</p>
 						</div>
 
-						<div class="col-lg-12">
+						<div class="col-lg-12 divLabelEncherir">
 							<form method="post" action="" role="form">
 								<label for="price">Ma proposition : </label> <input id="price"
 									type="number" name="price" class="form-control" min=""
 									step="10" value="220">
 
-								<div class="col-md-6">
+								<div class="col-md-6 btnEnregistrer">
 									<input type="submit" class="btn-primary buttonEnregistrer"
 										value="Enchérir">
 								</div>
@@ -99,5 +99,6 @@
 			</div>
 		</div>
 	</section>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

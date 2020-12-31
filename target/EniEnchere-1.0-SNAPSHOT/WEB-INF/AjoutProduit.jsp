@@ -1,3 +1,4 @@
+<%--@elvariable id="utilisateur" type="fr.eniEnchere.bo.Utilisateurs"--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -31,7 +32,7 @@
                     
                     reader.addEventListener( "load", function( event ) {
                         let span = document.createElement('span');
-                        span.innerHTML = '<img widht="300" src="' + event.target.result + '" class="figure-img img-fluid rounded" alt="TestImage" />';
+                        span.innerHTML = '<img width="300" src="' + event.target.result + '" class="figure-img img-fluid rounded" alt="TestImage" />';
                         imageList.appendChild( span );
                         
                     });
@@ -44,7 +45,7 @@
 </head>
 <body>
 
-  <%@ include file="logoTop.jsp"%>
+<%@ include file="header.jsp" %>
   <section id="ajout-produit">
 	<!-- debut partie produit -->
 	<div>
@@ -76,7 +77,7 @@
             </div>
             
             <div class="col-lg-12">
-			  <label for="categorie">Catégorie</label> 
+			  <label for="categorie">Catégorie :</label>
 			    <select name="derouleur_categories" id="categorie" class="form-control">
 				  <option>Informatique</option>
 				  <option>Ameublement</option>
@@ -88,7 +89,7 @@
             
             
             <div class="col-lg-12">
-              <label for="file">Photo de l'article</label>
+              <label for="file">Photo de l'article :</label>
               <input id="file" type="file" name="multiPartServlet" class="form-control" value="file" accept="image/*" multiple onchange="readFilesAndDisplayPreview(this.files);" >
             </div>
             
@@ -144,7 +145,7 @@
 	</div>
 	
   </section>
-  
 
+<%@ include file="footer.jsp" %>
 </body>
 </html>

@@ -1,27 +1,33 @@
 @charset "UTF-8";
 
 /*** Début du style GLOBAL ***/
-body * {
-    font-family: 'Chilanka';
+body, html {
+    height: 100%;
+    margin: 0;
+
 }
+
 
 button * {
     font-weight: bold;
     box-shadow: 5px 10px;
 }
 
-.logo_top {
-    color: #777;
+hr {
+    border: none;
+    height: 1px;
+    width: 90%;
+    border-bottom: 1px solid rgb(234 234 234);
+    box-shadow: 1px 2px 14px 1px #dcdcdc;
 }
+
+
 /** Fin du style GLOBAL ***/
 
 /* NavBar*/
 #accueilOffline .divNavbar {
     float: right;
-}
 
-#accueilOffline .divNavbar {
-    float: right;
 }
 
 /* Toutes les divs sauf le titre*/
@@ -194,14 +200,38 @@ button * {
 /*** Fin page d'ACCUEIL ***/
 
 /*** Début page CONNEXION & page MON PROFIL ***/
+
+
+
+#connexion_et_monprofil {
+    min-height: calc(100vh - 251px);
+}
+
+#inscription {
+    min-height: calc(100vh - 152px);
+}
+
+#ajout-produit {
+    min-height: calc(100vh - 152px);
+}
+
+#page_encherir {
+    min-height: calc(100vh - 101px);
+}
+
+
 #connexion_et_monprofil .logoProfil {
     margin-bottom: 80px;
 }
 
 #connexion_et_monprofil .container-fluid {
     margin-top: 150px;
-    width: 450px;
+    width: 650px;
+    box-shadow: 10px 12px 15px -1px rgba(230,230,230,1);
+    padding: 30px;
+
 }
+
 
 #connexion_et_monprofil .containerProfil {
     width: 600px;
@@ -211,6 +241,7 @@ button * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 #connexion_et_monprofil .connexionDiv {
@@ -252,31 +283,49 @@ button * {
     display: inline-flex;
 }
 
+#connexion_et_monprofil .motDePasseOublie {
+    color: #f19000;
+    text-decoration: underline;
+}
+
 #connexion_et_monprofil .btnCreerCompte {
     margin-top: 50px;
     width: 100%;
+    background-color: #ef64a7;
+    border: none;
 }
 
 #connexion_et_monprofil .btnConnexion {
     width: 50%;
     font-size: 18px;
     padding: 10px 0px;
+    background-color: #ef64a7;
+    border: none;
 }
 
 #connexion_et_monprofil #identifiant {
-    width: 250px;
+    width: 350px;
 }
 
 #connexion_et_monprofil #motDePasse {
-    width: 250px;
+    width: 350px;
 }
 
 #connexion_et_monprofil .btn {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+
+    background-color: #ef64a7;
+    border: none;
 }
 
 #connexion_et_monprofil .logo {
     margin-bottom: 100px;
+}
+
+#connexion_et_monprofil .heading {
+text-align: center;
+margin-bottom: 50px;
 }
 
 #connexion_et_monprofil .inputEnlectureSeul {
@@ -365,7 +414,7 @@ button * {
 }
 
 #inscription-form {
-    font-size: 20px;
+    font-size: 17px;
     margin-left: -25px;
 }
 
@@ -375,7 +424,7 @@ button * {
 
 #inscription .inscription-control {
     height: 34px;
-    font-size: 18px;
+    font-size: 15px;
     width: 250px;
     padding: 6px 12px;
     border: 1px solid #ccc;
@@ -391,19 +440,24 @@ button * {
 }
 
 #inscription .buttonInscription {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 200px;
     font-size: 18px;
     padding: 10px 0px;
+    background-color: #ef64a7;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
 }
 
 #inscription .btnCreer {
     text-align: end;
     padding-right: 30px;
+
 }
 
 #inscription .btnAnnuler {
     padding-left: 80px;
+
+
 }
 
 #inscription .infoUtile {
@@ -556,13 +610,34 @@ button * {
 
 /*** Début page liste encheres connecte ***/
 /* NavBar*/
-#enchereConnecte .divNavbar {
-    float: right;
+
+
+
+ .navbar {
+    margin-bottom: 0px;
+    border-bottom: 0px;
 }
 
-#enchereConnecte .divNavbar {
-    float: right;
+ .navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 900;
 }
+
+
+ .navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #ef64a7;
+    color: #fff;
+}
+
+ .divNavbar {
+    float: right;
+
+}
+
 
 /* Toutes les divs sauf le titre*/
 #enchereConnecte .divPrincipaleAvecFiltre {
@@ -590,6 +665,11 @@ button * {
     font-size: 25px;
 }
 
+.filtreTitre {
+    font-size: 23px;
+    color: #0b0118;
+}
+
 #enchereConnecte .searchPlaceHolder {
     width: 100%;
 }
@@ -603,7 +683,7 @@ button * {
     margin-left: 120px;
 }
 
-#enchereConnecte .btn .caret {
+.icon-wrap {
     margin-left: 100px;
 }
 
@@ -640,19 +720,31 @@ button * {
 #enchereConnecte .btnRechercher {
     width: 250px;
     height: 100px;
+    background-color: #5201b5;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+}
+
+#enchereConnecte ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
+    color: #fff;
+    font-weight: bold;
+}
+
+#enchereConnecte .divDropDown .btn {
+    border-radius: 15px;
+    width: 250px;
 }
 
 /*Le cadre exterieur: loupe et input search*/
 #enchereConnecte .input-group {
     margin-left: 100px;
     margin-bottom: 20px;
-    border: solid 1px grey;
+    border: solid 1px rgb(182, 182, 182);
     border-radius: 300px;
-    width: 300px;
-    height: 35px;
+    height: 40px;
     display: flex;
-    width: 400px;
+    width: 600px;
+    background: linear-gradient(to right, #e24731 0%, #ff6747 28%, #6b25d6 91%, #5201b5 100%);
 }
 
 #enchereConnecte .input-group-prepend {
@@ -679,73 +771,133 @@ button * {
     font-size: 15px;
     padding-left: 13px;
     padding-top: 9px;
-    color: grey;
+    color:white;
 }
 
 /* Vignette des produits*/
 
-#enchereConnecte .alignerCarteProduit {
-
+#enchereConnecte .productCard {
     display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-
-}
-
-
-#enchereConnecte .card-product {
-
-    height: 150px;
-    background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    display:flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    width: 400px;
-    margin: 20px 0 10px 250px;
-}
-
-#enchereConnecte .card-product-bis {
-    height: 150px;
-    width: 400px;
-}
-#enchereConnecte .card-product img {
-    height: 100%;
-    width: 100px;
-    object-fit: cover;
-}
-
-#enchereConnecte .card-product h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-}
-
-#enchereConnecte .card-product p {
-    font-size: 12px;
-    line-height: 1.4;
-    opacity: .7;
-    margin-bottom: 0;
-    margin-top: 8px;
+    flex-wrap: wrap;
 
 }
 
-#enchereConnecte .card-product .card-product-infos {
-    padding: 16px;
+#enchereConnecte .OneProductCard {
+    margin: 20px 10px;
+    position: relative;
+    width: 300px;
+    -webkit-box-shadow: 10px 4px 29px -7px rgba(230,230,230,1);
+    -moz-box-shadow: 10px 4px 29px -7px rgba(230,230,230,1);
+    box-shadow: 10px 4px 29px -7px rgba(230,230,230,1);
 }
 
-#enchereConnecte .card-product h2 {
-    text-decoration-line: underline;
+#enchereConnecte .détailsVentesInlign {
+    display: flex;
+    justify-content: space-between;
+
 }
+
+
+#enchereConnecte .OneProductCard .imageProduit {
+    height: 200px;
+}
+
+#enchereConnecte .pictoNouveaute  {
+    width: 45%;
+    position: absolute;
+    left: 0px;
+}
+
 
 #enchereConnecte .filterDiv {
     display: none; /* caché par défaut */
 }
 
+#enchereConnecte .titreProduit {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#enchereConnecte .descriptionProduit {
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-bottom:2px;
+}
+
+#enchereConnecte .prixDeVente {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #f85f42;
+}
+
+#enchereConnecte .nombreDeVente {
+    font-style: italic;
+}
+
+#enchereConnecte .divTextDescription {
+    padding: 0px 10px;
+
+}
+
+#enchereConnecte .timer {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-left: 80px;
+
+}
+
+#enchereConnecte .fa-heart {
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+
+}
+
+
+
+
+
+
+.topBanner {
+    background-color: #5201B5;
+
+}
+
+.hero-image {
+    background-image: url("img/ecommerce-banner.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: rgb(15, 15, 15);
+}
+
+.hero-text h1 {
+    font-size: 80px;
+}
+
+.hero-text p {
+    font-size: 40px;
+}
+
 /* "show" qui se rajoute aux elements pour afficher grace à javascript */
 .show {
-    display: flex !important;
+    display: block !important;
 }
 
 .card-product-infos .show {
@@ -755,10 +907,48 @@ button * {
 /*** Début page ENCHERIR ***/
 
 #page_encherir .titre {
-    color: red;
     text-align: center;
 }
 
+#page_encherir .btnEnregistrer {
+    text-align: center;
+    width: 0% !important;
+    float: none;
+}
+
+#page_encherir .buttonEnregistrer {
+    margin: 50px 300px;
+    text-align: center;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px 0px;
+    background-color: #ef64a7;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+}
+
+#page_encherir h3 {
+font-size: 19px;
+    margin: 0px;
+}
+
+#page_encherir .divLabel {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+#page_encherir .divLabelEncherir {
+    margin-top: 25px;
+    width: 50%;
+}
+
+#page_encherir .titre {
+    margin: 50px 0 25px;
+}
+
+#page_encherir .nomArticle {
+    margin-bottom: 25px;
+}
 
 /*** Début page mot de passe ***/
 
@@ -824,7 +1014,6 @@ fieldset {
 }
 
 #ajout-produit .buttonInscription {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 200px;
     font-size: 18px;
     padding: 10px 0px;
@@ -839,6 +1028,18 @@ fieldset {
     width:100%;
     font-size: 18px;
     padding: 10px 0px;
+    background-color: #ef64a7;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+}
+
+#ajout-produit .buttonAnnuler {
+    width:100%;
+    font-size: 18px;
+    padding: 10px 0px;
+    background-color: #ef64a7;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
 }
 
 #ajout-produit .buttonAnnuler {
@@ -847,42 +1048,11 @@ fieldset {
     padding: 10px 0px;
 }
 
-#ajout-produit .buttonAnnuler {
-    width:100%;
-    font-size: 18px;
-    padding: 10px 0px;
+#ajout-produit .col-lg-12 {
+    margin-bottom: 15px;
 }
 
 
-/*** Footer ***/
-
-
-.footer {
-    background: #F4F4F4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 0px 50px;
-    color: rgba(0,0,0,0.3);
-}
-.footer-links {
-    display: flex;
-    align-items: center;
-}
-.footer-links a {
-    color: black;
-    opacity: 0.15;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 0px 10px;
-}
-.footer-links a:hover {
-    opacity: 1;
-}
-.footer .fa-heart {
-    color: #D23333;
-}
 
 
 
